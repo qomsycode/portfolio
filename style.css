@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --bg-color: #241e30;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: rgb(236, 157, 219);
+    --heading-color: linear gradient();
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+   
+}
+.nav-bar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    cursor: pointer;
+    transition: .4s;
+}
+.nav-bar a:hover,
+.nav-bar a.active{
+    color: var(--main-color);
+}
+#menu-icon, #x-icon{
+    font-size: 3.2rem;
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+}
+/*setting pages to center*/
+.homes,
+.abouts,
+.services,
+.portfolios,
+.contacts{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.homes{
+    font-size: 3vmin;
+    opacity: 1;
+    text-align: center;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3px 5px;
+    transition: .5s;
+    z-index: ;
+}
+.social-media a, .services .gh-btn, .mail_btn:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/*About Section*/
+.abouts{
+    font-size: 3vmin;
+    opacity: 0;
+    text-align: center;
+}
+.about h2{
+    padding: 30px 0px;
+}
+
+/*Services section*/
+.services{
+    font-size: 3.5vmin;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+}
+.services .service-container{
+    width: auto;
+    height: auto;
+    margin: 30px 0;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--second-bg-color);
+    transition: 0.5s ease;
+   
+}
+.services .service-container:hover{
+    box-shadow: 0 2px 5px var(--main-color);
+    transform: scale(1.1);
+}
+.btn, .mail_btn{
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.services #code{
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+/*Portfolio boxes*/
+.portfolios{
+    font-size: 3vmin;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*contact me and drop ur info*/
+.contacts{
+    font-size: 3vmin;
+    color: whitesmoke;
+    text-align: center;
+    opacity: 0;
+}
+.contact .heading{
+    padding: 30px 0;
+}
+/*.contact form{
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    max-width: 70rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+} */
+
+.footer{
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*mobile-menu*/
+@media only screen and (max-width:850px) {
+    .nav-bar{
+        padding: 0;
+    }
+    
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        margin-top: -80vh;
+        background: var(--second-bg-color);
+        transition: 1s;
+        border-bottom-right-radius: 60px;
+    }
+    .logo{
+      position: fixed;
+      top: 20px;
+      left: 30px;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    #menu-icon, #x-icon{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .nav-bar a{
+       margin: auto ;
+       cursor: pointer;
+    }
+}
