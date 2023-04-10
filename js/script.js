@@ -32,37 +32,37 @@ const contact= document.querySelector(".contact");
 const contacts= document.querySelector(".contacts");
 
 home.onclick =()=>{
-    homes.style.opacity="1"
-    abouts.style.opacity="0";
-    services.style.opacity="0";
-    portfolios.style.opacity="0";
-    contacts.style.opacity="0";
+    homes.style.display="block"
+    abouts.style.display="none";
+    services.style.display="none";
+    portfolios.style.display="none";
+    contacts.style.display="none";
 }
 about.onclick =()=>{
-    abouts.style.opacity="1"
-    homes.style.opacity="0";
-    services.style.opacity="0";
-    portfolios.style.opacity="0";
-    contacts.style.opacity="0";
+    abouts.style.display="block";
+    homes.style.display="none";
+    services.style.display="none";
+    portfolios.style.display="none";
+    contacts.style.display="none";
 }
 service.onclick =()=>{
-    services.style.opacity="1"
-    abouts.style.opacity="0";
-    homes.style.opacity="0";
-    portfolios.style.opacity="0";
-    contacts.style.opacity="0";
+    services.style.display="block";
+    abouts.style.display="none";
+    homes.style.display="none";
+    portfolios.style.display="none";
+    contacts.style.display="none";
 }
 portfolio.onclick =()=>{
-    portfolios.style.opacity="1"
-    abouts.style.opacity="0";
-    services.style.opacity="0";
-    homes.style.opacity="0";
-    contacts.style.opacity="0";
+    portfolios.style.display="block";
+    abouts.style.display="none";
+    services.style.display="none";
+    homes.style.odisplay="none";
+    contacts.style.display="none";;
 }
 contact.onclick =()=>{
-    contacts.style.opacity="1"
-    abouts.style.opacity="0";
-    services.style.opacity="0";
-    portfolios.style.opacity="0";
-    homes.style.opacity="0";
+    contacts.style.display="block";
+    abouts.style.display="none";
+    services.style.display="none";
+    portfolios.style.display="none";
+    homes.style.display="none";
 }

@@ -24,7 +24,7 @@ body{
     color: var(--text-color);
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,9 +72,12 @@ body{
 }
 
 .homes{
-    font-size: 3vmin;
-    opacity: 1;
+    font-size: 3.5vmin;
+    display: block;
     text-align: center;
+}
+.home-content{
+    margin: auto;
 }
 .social-media a{
     display: inline-flex;
@@ -89,10 +92,12 @@ body{
     font-size: 2rem;
     color: var(--main-color);
     margin: 3px 5px;
-    transition: .5s;
+    transition: .7s;
     z-index: ;
 }
-.social-media a, .services .gh-btn, .mail_btn:hover{
+.social-media a:hover,
+.services .gh-btn:hover, 
+.mail_btn:hover{
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
@@ -100,8 +105,8 @@ body{
 
 /*About Section*/
 .abouts{
-    font-size: 3vmin;
-    opacity: 0;
+    font-size: 3.5vmin;
+    display: none;
     text-align: center;
 }
 .about h2{
@@ -113,7 +118,7 @@ body{
     font-size: 3.5vmin;
     text-align: center;
     cursor: pointer;
-    opacity: 0;
+    display: none;
 }
 .services .service-container{
     width: auto;
@@ -148,17 +153,17 @@ body{
 
 /*Portfolio boxes*/
 .portfolios{
-    font-size: 3vmin;
-    opacity: 0;
+    font-size: 3.5vmin;
+    display: none;
     pointer-events: none;
 }
 
 /*contact me and drop ur info*/
 .contacts{
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     color: whitesmoke;
     text-align: center;
-    opacity: 0;
+    display: none;
 }
 .contact .heading{
     padding: 30px 0;
@@ -212,8 +217,8 @@ body{
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 70vh;
-        margin-top: -80vh;
+        height: 60vh;
+        margin-top: -70vh;
         background: var(--second-bg-color);
         transition: 1s;
         border-bottom-right-radius: 60px;
